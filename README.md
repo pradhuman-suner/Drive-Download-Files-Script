@@ -4,15 +4,27 @@ This repository contains a JavaScript file that allows you to download all files
 
 ## How to Use
 
-1. Clone this repository to your local machine or download the JavaScript file (`download.js`) directly.
+1. Clone this repository to your local machine or download the JavaScript file (`downloadScriptDrive.js`) directly.
 2. Open your Google Drive folder containing the files you want to download.
 3. Obtain your Google Drive API token and replace `[Add Here Your Token]` in the JavaScript code with your actual token.
 4. Open the DevTools console in your browser while viewing the Google Drive folder (usually done by pressing `F12` or `Ctrl+Shift+J`).
-5. Copy and paste the modified JavaScript code from the `download.js` file into the DevTools console and press `Enter`.
+5. Copy and paste the modified JavaScript code from the `downloadScriptDrive.js` file into the DevTools console and press `Enter`.
 
 The script will iterate through all the files in the folder and initiate a download for each file individually. This allows you to download files without the need to zip them, making it faster and more convenient for large numbers of files.
 
 
+**_NOTE:_**
+```diff
+To obtain the required API token for this script, follow these steps:
+1. Open one of the files in your Google Drive folder.
+2. Open the browser's inspect window and navigate to the 'Network' tab.
+3. Click on a URL similar to "uc?export=download" as shown in the image.
+4. Copy the URL from the address bar.
+5. Extract the key after the `id` parameter in the URL. This key is your API token.
+
+![image](https://github.com/pradhuman-suner/Drive-Download-Files-Script-/assets/90644231/6c665fe0-7df8-4559-80c7-6c493d62fb13)
+
+```
 
 # Script 
 ```js
@@ -30,7 +42,7 @@ document.querySelectorAll('[data-id]').forEach( (item) =>  {
         console.log('New script appended!')
     }, 10);
 });
-
+```
 
 ## Disclaimer
 
