@@ -21,10 +21,9 @@ To obtain the required API token for this script, follow these steps:
 3. Click on a URL similar to "uc?export=download" as shown in the image.
 4. Copy the URL from the address bar.
 5. Extract the key after the `id` parameter in the URL. This key is your API token.
-
-![image](https://github.com/pradhuman-suner/Drive-Download-Files-Script-/assets/90644231/6c665fe0-7df8-4559-80c7-6c493d62fb13)
-
 ```
+<img src="https://raw.githubusercontent.com/pradhuman-suner/Drive-Download-Files-Script/main/image.png" alt="Screenshot" width="70%">
+
 
 # Script 
 ```js
