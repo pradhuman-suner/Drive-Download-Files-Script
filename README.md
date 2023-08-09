@@ -2,7 +2,8 @@
 A Javascript file to run on drive folder to download all files within folder without zipping 
 
 
-<div>
+# Script 
+```js
 var token = "[Add Here Your Token]";
 document.querySelectorAll('[data-id]').forEach( (item) =>  {
   URL = "https://drive.google.com/uc?export=download&id=" + item.getAttribute('data-id') + token ;
@@ -17,4 +18,4 @@ document.querySelectorAll('[data-id]').forEach( (item) =>  {
         console.log('New script appended!')
     }, 10);
 });
-</div>
+
